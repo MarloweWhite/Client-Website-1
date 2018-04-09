@@ -1,0 +1,313 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Myriad;
+}
+
+/*Importing cleaner, nicer fonts*/
+@font-face {
+    font-family: Myriad;
+    src: url(../fonts/myriad.otf);
+}
+
+@font-face {
+    font-family: Myriad-Bold;
+    src: url(../fonts/myriadBold.otf);
+}
+
+.fNError1, .fNError2, .fNError3, .fNError4, .fNError5, .fNError6, .fNError7,
+.fNError8, .fNError9, .fNError10, .fNError11, .fNError12, .fNError13, .fNError14
+, .fNError15, .fNError16, .fNError17, .fNError18, .fNError19, .fNError20, .fNError21
+, .fNError22, .fNError23, .fNError24, .fNError25, .fNError26, .fNError27, .fNError28
+, .fNError29, .fNError30, .fNError31, .fNError32, .fNError33, .fNError34, .fNError35
+, .fNError36, .fNError37, .fNError38, .fNError39, .fNError40, .fNError41, .fNError42
+, .fNError43, .fNError44{
+  display: none;
+  color: red;
+}
+
+.signaturePad{
+  border: 2px;
+  color: black;
+}
+
+html{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body{
+  width: 100vw;
+}
+
+h2{
+  font-family: Myriad-Bold;
+  margin-bottom: 3px;
+}
+
+h3{
+  font-family: Myriad-Bold;
+  margin-bottom: 3px;
+}
+
+h4 span{
+  font-family: Myriad-Bold;
+}
+
+p{
+  margin-bottom: 20px;
+}
+header{
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  display: block;
+  padding-bottom: 20px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%); /*Changes shape of div to
+                                                      be slightly slanted*/
+
+}
+
+.headerContent{
+  width: 550px;
+  height: 100%;
+  margin: auto;
+}
+
+header img{
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  margin-top: 15px;
+}
+
+header h4{
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  margin-left: 20px;
+  color: #4B4B4B;
+}
+
+header h4 span{
+  font-weight: bold;
+}
+
+
+
+main{
+  min-width: 550px;
+  width: 550px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+form{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+input{
+  width: 400px;
+  padding: 10px 5px 10px 5px;
+  margin-bottom: 5px;
+}
+
+select{
+  margin-bottom: 20px;
+  padding: 10px 5px 10px 5px;
+}
+
+
+
+.alignDiv, .date{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.radioInput{
+  margin-right: 20px;
+  margin-left: 0px;
+  display: inline-block;
+  width: 20px;
+  margin-bottom: 0px;
+}
+
+.natInsNum, .dateOfBirth{
+  display: inline-block;
+  margin-right: 2px;
+  width: 20px;
+}
+
+.dateYear{
+  width: 60px;
+}
+
+.pCode{
+  display: inline-block;
+  margin-right: 2px;
+  width: 40px;
+}
+
+.subSubmit{
+  display: block;
+  width: 90px;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-family: Myriad;
+  font-size: 13px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition:  0.3s ease-out;
+}
+
+.subBut{
+  display: inline-block;
+  width: 150px;
+  margin-right: 20px;
+  margin-top: 5px;
+  background-color: #1f213f;
+  color: white;
+  font-family: Myriad-Bold;
+  font-size: 13px;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+
+
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition:  0.3s ease-out;
+}
+
+.subBut:hover{
+  cursor: pointer;
+  background-color: #e52329;
+}
+
+p.error{
+  opacity: 1;
+  color: red;
+  padding: 5px;
+  padding-top: 0px;
+  margin-bottom: 15px;
+}
+section{
+  background-color: #EDEDED;
+  padding: 20px;
+  margin-bottom:  20px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100vw;
+  height: 25px;
+  background-color: #1f213f;
+  color: white;
+}
+
+.footerLeft{
+  display: inline-block;
+  padding: 2px 0px 2px 20px;
+}
+
+.footerRight{
+  display: inline-block;
+  float: right;
+  text-align: right;
+  width: 40%;
+  padding: 2px 20px 2px 0px;
+}
+
+.centreText{
+  text-align: center;
+}
+
+.dataTable{
+  width: 90vw;
+  margin-left: 2.5vw;
+  overflow: scroll;
+}
+
+.adminBlock{
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 550px) {
+  main{
+    min-width: 320px;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  form{
+    margin: auto;
+  }
+
+  .headerContent{
+    width: 80vw;
+  }
+
+  .headerContent img{
+    width: 200px;
+    height: auto;
+    margin-left: 5%;
+  }
+
+  form{
+    text-align: center;
+  }
+
+  form h3{
+    text-align: left;
+  }
+
+  input{
+    width: 90%;
+  }
+
+  .subBut{
+    width: 40%;
+  }
+
+  .radioInput{
+    width: auto;
+    margin-left: 0px;
+    text-align: left;
+  }
+
+  .alignDiv, .date{
+    width: 100vw;
+    height: auto;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    width: 90%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  #Signaturepad {
+    border:4px solid black;
+    border-radius:5px;
+    float:left;
+    position:relative; /* Allows for mozilla firefox to operate correctly */
+  }

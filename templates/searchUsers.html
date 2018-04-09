@@ -1,0 +1,27 @@
+{%extends "userPage.html"%}
+<head><!--Head section-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--Linking jQuery to be used-->
+
+  <script type="text/javascript" src="../static/javascript/main.js"></script> <!-- Linking to JS/jQuery -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Above line - no 'main.js' document in javascript folder to connect with! -->
+
+</head>
+
+{%block adminBlock%}
+<h3>Search A User:</h3>
+<p>Search a job via a workers name or a companies name.</p>
+
+<br />
+
+<form name="userSearch" action="/Search/Jobs" method= "post">
+  <input placeholder="Search Here" name="userSearch" />
+  <input type="submit" value="submit"/>
+
+</form>
+
+
+{%endblock%}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head><!--Head section-->
+    <title>Acorn Recruitment | Admin</title>
+    <link rel="icon" href="images/logoIcon.png">	<!--icon-->
+    <link type="text/css" href="../static/css/style.css" rel="stylesheet" /><!--Connecting the CSS to the page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--Linking jQuery to be used-->
+    <script type="text/javascript" src="../static/javascript/main.js"></script> <!-- Linking to JS/jQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Above line - no 'main.js' document in javascript folder to connect with! -->
+  </head>
+
+  <body><!--Body-->
+    <header><!--Header - top section-->
+      <div class="headerContent">
+        <a href="../static/index.html">
+          <img src="../static/images/logo.png" alt="Acorn Recruitment" /><!--Logo for header-->
+        </a>        <h4> <!--Using h4 for a site slogan, and using span to make parts bold-->
+              <span>Permanent</span> and <span>temporary</span> recruitment.<br />
+            <span>Learning</span> and <span>development</span> solutions.
+        </h4>
+      </div>
+    </header>
+
+    {%block mainBlock%}
+    <main><!--Main -->
+      <article>
+        <section>
+          <h2>Admin Page</h2><!--Title for form -->
+          <p>
+            This page can be used to edit, delete, search through or browse current records that have been
+            submitted by users.<br /><br />
+
+            Quick links:
+
+            <form action="/Users" method='get'>
+              <button type='submit'>User Table</button>
+            </form>
+            <!-- <form action="/Jobs" method='get'>
+              <button type='submit'>Jobs</button>
+            </form> -->
+          </p>
+        </section>
+
+
+        <section>
+          <h2>Why is data processing important?</h2>
+          <p>
+            For Acorn to maintain a professional standard all data must be relational,
+            accurate, and not redundant.<br />
+            It is an admins role to edit or add users/jobs when nessicary, or browse
+            information when needed.<br />
+            When handling data please ensure you follow the Data Protection Act 1990,
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer><!--Footer of page-->
+      <div class="footerLeft"><!--Div for left section of footer-->
+        <p>@Copyright2017</p>
+      </div>
+
+      <div class="footerRight"><!--Div for right section of footer-->
+        <p>01633 660 000</p>
+      </div>
+    <footer>
+    {%endblock%}
+  </body>
+</html>

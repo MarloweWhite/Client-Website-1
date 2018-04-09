@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head><!--Head section-->
+    <title>Acorn Recruitment | Admin</title>
+    <link rel="icon" href="images/logoIcon.png">	<!--icon-->
+    <link type="text/css" href="css/style.css" rel="stylesheet" /><!--Connecting the CSS to the page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--Linking jQuery to be used-->
+    <script type="text/javascript" src="javascript/main.js"></script> <!-- Linking to JS/jQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Above line - no 'main.js' document in javascript folder to connect with! -->
+  </head>
+
+  <body><!--Body-->
+    <header><!--Header - top section-->
+      <div class="headerContent">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Acorn Recruitment" /><!--Logo for header-->
+        </a>        <h4> <!--Using h4 for a site slogan, and using span to make parts bold-->
+              <span>Permanent</span> and <span>temporary</span> recruitment.<br />
+            <span>Learning</span> and <span>development</span> solutions.
+        </h4>
+      </div>
+    </header>
+
+    <main><!--Main -->
+      <article>
+        <section>
+          <h2>Login</h2><!--Title for form -->
+          <form name="loginForm" action="/loginUser" method="post">
+            <h3>Email</h3><!--All titles in form are h3-->
+            <input type="text" name="uEmail" placeholder="Please enter email" />
+            <h3>Password</h3>
+            <input type="password" name="uPassword" placeholder="Please enter your password" />
+            <br />
+            <a class="subBut" href="signupPage.html">Sign Up</a>
+            <input class="subBut" type="submit" value="Log in" onclick="return LoginValidation()">
+
+            <a href="AcornProjectForm.html">
+              <p>Or use our form without signing up...</p>
+            </a>
+          </form>
+
+        </section>
+
+        <section>
+          <h2>What is Acorn?</h2>
+          <p>
+            Acorn is one of the UK's leading recruitement companies, with a network
+            of branches, on-site locations and specialist divisions throughout England and Wales.<br/>
+            We're a multi-award winning training company, so come and join the 6,500
+            people we place every week into nearly 1,200 national and international businesses.
+          </p>
+        </section>
+
+        <section>
+          <h2>Why choose us?</h2>
+          <p>
+            We are on of the top recruiters and trainers in England and Wales, trusted by thousands of
+            workers every month.<br />
+            Our goal is to get you the job you deserve, so come to Acorn Recruitment today.
+          </p>
+        </section>
+        <section>
+          <form name="AdminForm" action="/loginAdmin" method="post">
+            <h3>Admin Login Email</h3><!--All titles in form are h3-->
+            <input type="text" name="uEmailA" placeholder="Please enter email" />
+            <h3>Admin Login Password</h3>
+            <input type="password" name="uPasswordA" placeholder="Please enter your password" />
+            <br />
+            <input class="subBut" type="submit" value="Admin Log in" onclick="return AdminValidation()">
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer><!--Footer of page-->
+      <div class="footerLeft"><!--Div for left section of footer-->
+        <p>@Copyright2017</p>
+      </div>
+
+      <div class="footerRight"><!--Div for right section of footer-->
+        <p>01633 660 000</p>
+      </div>
+    <footer>
+  </body>
+</html>

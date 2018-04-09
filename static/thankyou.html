@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Thank-you</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet" /><!--Connecting the CSS to the page-->
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <header><!--Header - top section-->
+      <div class="headerContent">
+        <img src="images/logo.png" alt="Acorn Recruitment" /><!--Logo for header-->
+        <h4> <!--Using h4 for a site slogan, and using span to make parts bold-->
+            <span>Permanent</span> and <span>temporary</span> recruitment.<br />
+            <span>Learning</span> and <span>development</span> solutions.
+        </h4>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="centreText">Thank-you for submitting your form!</h2>
+      <p>Your form has been successfully saved in our records and a PDF file version has been created.<br>
+        Below you will find icons which, if clicked, will take you to Social Media sites where you can
+        post about your experience on our site! </p>
+    </main>
+
+    <aside class="centreText">
+      <form method='get' action='/Login'>
+        <button class="subBut" type='submit'>Back to Login!</button>
+      </form>
+    </aside>
+
+    <section class="centreText">
+      <a href="https://twitter.com/acorn_jobs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @acorn_jobs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+      <div class="fb-share-button" data-href="https://en-gb.facebook.com/AcornJobs/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fen-gb.facebook.com%2FAcornJobs%2F&amp;src=sdkpreparse">Share</a></div>
+    </section>
+
+    <aside class="centreText">
+      <form action="http://www.acornpeople.com/" method="get">
+        <input type="submit" value="Our Website">
+      </form>
+    </aside>
+
+    <footer>
+      <div class="footerLeft"><!--Div for left section of footer-->
+        <p>@Copyright2017</p>
+      </div>
+
+      <div class="footerRight"><!--Div for right section of footer-->
+        <p>01633 660 000</p>
+      </div>
+    </footer>
+  </body>
+</html>

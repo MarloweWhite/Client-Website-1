@@ -1,0 +1,379 @@
+<!--Client Project - Acorn-->
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Acorn Recruitment | Form</title>
+    <link rel="icon" href="images/logoIcon.png">	<!--icon-->
+    <link type="text/css" href="css/style.css" rel="stylesheet" /><!--Connecting the CSS to the page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--Linking jQuery to be used-->
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <script type="text/javascript" src="javascript/Touch.js"></script>
+    <!-- Above line - no 'main.js' document in javascript folder to connect with! -->
+  </head>
+
+  <body>
+    <header><!--Header - top section-->
+      <div class="headerContent">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Acorn Recruitment" /><!--Logo for header-->
+        </a>
+        <h4> <!--Using h4 for a site slogan, and using span to make parts bold-->
+            <span>Permanent</span> and <span>temporary</span> recruitment.<br />
+            <span>Learning</span> and <span>development</span> solutions.
+        </h4>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <form name="AcornForm" action="/AddFormSubmission" method="post">
+          <h3>Title*</h3>
+          <div class="alignDiv">
+            <select name="title">
+              <option value="empty">Please choose a title</option>
+              <option value="sir">Sir</option>
+              <option value="mr">Mr</option>
+              <option value="mrs">Mrs</option>
+              <option value="miss">Miss</option>
+              <option value="ms">Ms</option>
+              <option value="dr">Dr</option>
+            </select>
+          </div>
+
+          <h2>First Name</h2>
+          <p>(maximum 20 characters)</p>
+          <input id="fName" name="fName" type="text" placeholder="Please enter first name">
+          <div class="fNError1">Please enter a firstname longer than two letters</div>
+
+          <h3>Last Name*</h3>
+          <p>(maximum 20 characters)</p>
+          <input type="text" id="lName" name="lName" placeholder="Please enter last name">
+          <div class="fNError2">Please enter a surname longer than two letters</div>
+
+          <h3>Photograph</h3>
+          <p>Only image resources accepted.</p>
+          <input type="file" name="uploadPhoto" accepted="image/*">
+
+          <h3>Date Of Birth*</h3>
+          <div class="date">
+            <input type="text" id="DOB1" class="dateOfBirth" name="dateOfBirth1" maxlength="2" placeholder="dd">
+            <div class="fNError3">Please enter a surname longer than two letters</div>
+            <input type="text" id="DOB2" class="dateOfBirth" name="dateOfBirth2" maxlength="2" placeholder="mm">
+            <div class="fNError4">Please enter a surname longer than two letters</div>
+            <input type="text" id="DOB3" class="dateOfBirth dateYear" name="dateOfBirth3" maxlength="4" placeholder="yyyy">
+            <div class="fNError5">Please enter a surname longer than two letters</div>
+          </div>
+
+          <h3>Email Address</h3>
+          <input type="email" name="userEmail" />
+
+          <h3>National Insurance Number*</h3>
+          <div class="alignDiv">
+            <input type="text" id="NI1" class="natInsNum" name="natInNum1" maxlength="2">
+            <div class="fNError6">Please enter a surname longer than two letters</div>
+            <input type="text" id="NI2" class="natInsNum" name="natInNum2" maxlength="2">
+            <div class="fNError7">Please enter a surname longer than two letters</div>
+            <input type="text" id="NI3" class="natInsNum" name="natInNum3" maxlength="2">
+            <div class="fNError8">Please enter a surname longer than two letters</div>
+            <input type="text" id="NI4" class="natInsNum" name="natInNum4" maxlength="2">
+            <div class="fNError9">Please enter a surname longer than two letters</div>
+            <input type="text" id="NI5" class="natInsNum" name="natInNum5" maxlength="1">
+            <div class="fNError10">Please enter a surname longer than two letters</div>
+          </div>
+
+          <h3>Address Line 1*</h3>
+          <p>(maximum 30 characters)</p>
+          <input type="text" id="ADL1" name="adLine1" placeholder="Please enter address line 1">
+          <div class="fNError43">Please enter a surname longer than two letters</div>
+
+          <h3>Address Line 2*</h3>
+          <p>(maximum 30 characters)</p>
+          <input type="text" id="ADL2" name="adLine2" placeholder="Please enter address line 2">
+          <div class="fNError44">Please enter a surname longer than two letters</div>
+
+          <h3>Post Code*</h3>
+          <div class="alignDiv">
+            <input type="text" id="PC1" class="pCode" name="pCode1" maxlength="4">
+            <div class="fNError11">Please enter a surname longer than two letters</div>
+            <input type="text" id="PC2" class="pCode" name="pCode2" maxlength="3">
+            <div class="fNError12">Please enter a surname longer than two letters</div>
+          </div>
+
+          <h3>Contact Number*</h3>
+          <p>(maximum 11 digits)</p>
+          <input type="text" id="CN" name="contactNum" placeholder="Please enter phone number">
+          <div class="fNError13">Please enter a surname longer than two letters</div>
+
+          <h3>Emergency Contact*</h3>
+          <p>(maximum 20 characters)</p>
+          <input type="text" id="ECName" name="eContactName" placeholder="Please enter your emergency contacts name">
+          <div class="fNError14">Please enter a surname longer than two letters</div>
+
+          <h3>Emergency Contact Number*</h3>
+          <p>(maximum 11 digits)</p>
+          <input type="text" id="ECNum" name="eContactNum" placeholder="Please enter emergency contact number">
+          <div class="fNError15">Please enter a surname longer than two letters</div>
+
+          <h3>Qualifications*</h3>
+          <p>(maximum 25 characters)</p>
+          <input type="text" id="Q1" name="quals1" placeholder="Please enter a qualification">
+          <div class="fNError16">Please enter a surname longer than two letters</div>
+          <input type="text" id="Q2" name="quals2" placeholder="Please enter a qualification">
+          <div class="fNError17">Please enter a surname longer than two letters</div>
+          <input type="text" id="Q3" name="quals3" placeholder="Please enter a qualification">
+          <div class="fNError18">Please enter a surname longer than two letters</div>
+
+          <h3>CV</h3>
+          <p>File extensions accepted: .docx, .pdf</p>
+          <input type="file" name="uploadCV" accepted=".pdf|.docx" action="/CV" method="post">
+
+          <h3>I Will Be Working Via:*</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="companyType" value="umbrellaCompany" />
+            <label>An Umbrella Company</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="companyType" value="personalServices" />
+            <label>A Personal Services Company</label>
+          </div>
+
+          <h3>Company Name*</h3>
+          <p>(maximum 30 characters)</p>
+          <input type="text" id="CompName" name="companyName" placeholder="Please enter company name">
+        </section>
+        <div class="fNError19">Please enter a surname longer than two letters</div>
+
+        <section>
+          <h3>Are You Eligible To Work In The UK*</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="eligibleUK" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="eligibleUK" value="no">
+            <label>No</label>
+          </div>
+
+          <p>
+            <em>*In line with the Home Office guidance on the prevention of illegal
+              working we will need to verify and take a copy of your ID documentation
+              as evidence of your right to work in the UK.
+            </em>
+          </p>
+
+          <h3>Documents To Prove Eligibility Of Working In UK</h3>
+          <input type="text" id="DOC1" name="eligibleUKDocs1" placeholder="Please enter document details*">
+          <div class="fNError20">Please enter a surname longer than two letters</div>
+          <input type="text" id="DOC2" name="eligibleUKDocs2" placeholder="Please enter document details">
+          <div class="fNError21">Please enter a surname longer than two letters</div>
+          <input type="text" id="DOC3" name="eligibleUKDocs3" placeholder="Please enter document details">
+          <div class="fNError22">Please enter a surname longer than two letters</div>
+
+          <h3>Do You Have A Current UK Driving License?*</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="ukDrive" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="ukDrive" value="no">
+            <label>No</label>
+          </div>
+
+          <h3>Do You Have Any Unspent Criminal Convictions As Per The Rehabilitation Of
+            Offenders Act 1974?*
+          </h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="crimCheck" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="crimCheck" value="no">
+            <label>No</label>
+          </div>
+
+          <h3>If Yes - Please Provide Full Details</h3>
+          <input type="text" name="crimInfo" placeholder="Please enter criminal conviction information">
+
+          <h3>Do You Consider That You Have A Disability*</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="disCheck" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="disCheck" value="no">
+            <label>No</label>
+          </div>
+          <p>
+            <em>
+              *This will help us to decide if there is a need for any adjustments
+              to your working arrangements or for your attendance at an interview.<br />
+              The Equality Act 2010 defines a disability as a physical or mental impairment
+              which has a substancial and long-term adverse effect on a person's ability
+              to carry out normal day to day activities.
+            </em>
+          </p>
+
+          <h3>If Yes - Please Provide Full Details</h3>
+          <input type="text" name="disInfo" placeholder="Please enter diability information">
+        </section>
+
+        <section>
+          <h2>Referees</h2>
+
+          <p>Referee 1</p>
+
+          <h3>First Name*</h3>
+          <p>(maximum 20 characters)</p>
+          <input type="text" id="RFFN" name="r1fName" placeholder="Please enter first name">
+          <div class="fNError23">Please enter a surname longer than two letters</div>
+
+          <h3>Last Name*</h3>
+          <p>(maximum 20 characters)</p>
+          <input type="text" id="RFLN" name="r1lName" placeholder="Please enter last name">
+          <div class="fNError24">Please enter a surname longer than two letters</div>
+
+          <h3>Job Title*</h3>
+          <p>(maximum 25 characters)</p>
+          <input type="text" id="RFJT" name="r1jobTitle" placeholder="Please enter your job title">
+          <div class="fNError25">Please enter a surname longer than two letters</div>
+
+          <h3>Company Name*</h3>
+          <p>(maximum 25 characters)</p>
+          <input type="text" id="RFCompName" name="r1companyName" placeholder="Please enter the name of your company">
+          <div class="fNError26">Please enter a surname longer than two letters</div>
+
+          <h3>Address Line 1*</h3>
+          <p>(maximum 30 characters)</p>
+          <input type="text" id="RFADL1" name="r1adLine1" placeholder="Please enter address line 1">
+          <div class="fNError27">Please enter a surname longer than two letters</div>
+
+          <h3>Address Line 2*</h3>
+          <p>(maximum 30 characters)</p>
+          <input type="text" id="RFADL2" name="r1adLine2" placeholder="Please enter address line 2">
+          <div class="fNError28">Please enter a surname longer than two letters</div>
+
+          <h3>Post Code*</h3>
+          <div class="alignDiv">
+            <input type="text" id="RFPCL1" class="pCode" name="r1pCode1" maxlength="4">
+            <div class="fNError29">Please enter a surname longer than two letters</div>
+            <input type="text" id="RFPCL2" class="pCode" name="r1pCode2" maxlength="3">
+            <div class="fNError30">Please enter a surname longer than two letters</div>
+          </div>
+
+          <h3>Contact Number*</h3>
+          <p>(11 digits)</p>
+          <input type="text" id="RFCN" name="r1contactNumber" placeholder="Please enter your contact number">
+          <div class="fNError31">Please enter a surname longer than two letters</div>
+
+          <h3>Email Address*</h3>
+          <input type="text" id="RFEA" name="r1emailAddress" placeholder="Please enter your email address">
+          <div class="fNError32">Please enter a surname longer than two letters</div>
+
+
+          <p>Referee 2</p>
+
+          <h3>First Name*</h3>
+          <p>(maximum 20 characters)</p>
+          <input type="text" id="RF2FN" name="r2fName" placeholder="Please enter first name">
+          <div class="fNError33">Please enter a surname longer than two letters</div>
+
+          <h3>Last Name*</h3>
+          <p>(maximum 20 characters)</p>
+          <input type="text" id="RF2LN" name="r2lName" placeholder="Please enter last name">
+          <div class="fNError34">Please enter a surname longer than two letters</div>
+
+          <h3>Job Title*</h3>
+          <p>(maximum 25 characters)</p>
+          <input type="text" id="RF2JT" name="r2jobTitle" placeholder="Please enter your job title">
+          <div class="fNError35">Please enter a surname longer than two letters</div>
+
+          <h3>Company Name*</h3>
+          <p>(maximum 25 characters)</p>
+          <input type="text" id="RF2CompName" name="r2companyName" placeholder="Please enter the name of your company">
+          <div class="fNError36">Please enter a surname longer than two letters</div>
+
+          <h3>Address Line 1*</h3>
+          <p>(maximum 30 characters)</p>
+          <input type="text" id="RF2ADL1" name="r2adLine1" placeholder="Please enter address line 1">
+          <div class="fNError37">Please enter a surname longer than two letters</div>
+
+          <h3>Address Line 2*</h3>
+          <p>(maximum 30 characters)</p>
+          <input type="text" id="RF2ADL2" name="r2adLine2" placeholder="Please enter address line 2">
+          <div class="fNError38">Please enter a surname longer than two letters</div>
+
+          <h3>Post Code*</h3>
+          <div class="alignDiv">
+            <input type="text" id="RF2PC1" class="pCode" name="r2pCode1" maxlength="4">
+            <div class="fNError39">Please enter a surname longer than two letters</div>
+            <input type="text" id="RF2PC2" class="pCode" name="r2pCode2" maxlength="3">
+            <div class="fNError40">Please enter a surname longer than two letters</div>
+          </div>
+
+          <h3>Contact Number*</h3>
+          <p>(11 digits)</p>
+          <input type="text" id="RF2CN" name="r2contactNumber" placeholder="Please enter your contact number">
+          <div class="fNError41">Please enter a surname longer than two letters</div>
+
+          <h3>Email Address*</h3>
+          <input type="text" id="RF2EA" name="r2emailAddress" placeholder="Please enter your email address">
+          <div class="fNError42">Please enter a surname longer than two letters</div>
+        </section>
+
+        <section>
+          <h3>Declaration</h3>
+          <p>
+            <em>
+              The information you provide on this form, associated with registration forms on any CV or additional documents will be used by the
+              Acorn Group to provide you with work finding services.<br /><br />
+              In providing this service to you, you consent to your personal data being included
+              on a computerised database and consent to us transferring your personal data to your clients and other third parties as required for
+              recruitment, selection, compliance and payroll purposes.<br /><br />
+              We may check the information collected with third parties or with other
+              information held by us or our clients.<br />
+              I here-by confirm that the information given is true and correct.<br />
+              I consent to my personl data being processed as detailed above.<br /><br />
+              I understand that providing false information or withholding relevant information will result in the
+              termination of an assignment or the withdrawal of an offer of an assignment.
+            </em>
+          </p>
+          <h3>Signature:</h3>
+          <body onload="init()">
+            <div id="SignatureInput">
+              <div class="leftside">
+                <a>Slowly sign your signature here with your finger or mouse</a><br>
+              </div>
+              <body onload="init()">
+                  <div id="signaturePadapp">
+
+                      <div class="topside">
+
+                           <input type="button" value="Clear signaturePad" id="clearsignature" onclick="clearCanvas(canvas,canvasTwo);">
+                      </div>
+                      <div class="rightside">
+                          <canvas id="signaturePad" height="300" width="400">
+                          </canvas>
+                      </div>
+                  </div>
+
+              </body>
+            </div>
+          </body>
+          <h3>Date will be automatically recorded</h3>
+          <input type="submit" value="Submit" onclick="return validateFormSubmission()">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerLeft"><!--Div for left section of footer-->
+        <p>@Copyright2017</p>
+      </div>
+
+      <div class="footerRight"><!--Div for right section of footer-->
+        <p>01633 660 000</p>
+      </div>
+    </footer>
+  </body>
+</html>

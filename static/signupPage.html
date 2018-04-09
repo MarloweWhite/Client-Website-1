@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<html>
+  <head><!--Head section for links and icon-->
+    <title>Acorn Recruitment | Sign Up</title>
+    <link rel="icon" href="images/logoIcon.png">	<!--icon-->
+    <link type="text/css" href="css/style.css" rel="stylesheet" /><!--Connecting the CSS to the page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!--Linking jQuery to be used-->
+    <script type="text/javascript" src="javascript/main.js"></script> <!-- Linking to JS/jQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Above line - no 'main.js' document in javascript folder to connect with! -->
+  </head>
+
+  <body>
+    <header>
+      <div class="headerContent">
+
+        <a href="index.html">
+          <img src="images/logo.png" alt="Acorn Recruitment" /><!--Logo for header-->
+        </a>
+        <h4> <!--Using h4 for a site slogan, and using span to make parts bold-->
+              <span>Permanent</span> and <span>temporary</span> recruitment.<br />
+            <span>Learning</span> and <span>development</span> solutions.
+        </h4>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section>
+          <h2>Sign Up</h2>
+          <p>Sign up for access to our apprenticeships, work placements, and training schemes nationwide.<br /><br />
+            We work with multiple companies such as Harsco and Geldards that can provide you with different types of work.
+          </p>
+        </section>
+
+        <!-- Form below with various parts -->
+        <section>
+          <form name="signUpForm" action="/addUser" method="post">
+          <h3>Title*</h3>
+          <div class="alignDiv">
+            <select name="title">
+              <option value="empty">Please choose a title</option>
+              <option value="sir">Sir</option>
+              <option value="mr">Mr</option>
+              <option value="mrs">Mrs</option>
+              <option value="miss">Miss</option>
+              <option value="ms">Ms</option>
+              <option value="dr">Dr</option>
+            </select>
+          </div>
+
+          <h3>First Name*</h3>
+          <input type="text" name="fName" placeholder="Please enter first name">
+          <p class="error fNError1">Please enter a name over one letter length</p>
+          <p class="error fNError2">No numbers allowed in name</p>
+
+          <h3>Last Name*</h3>
+          <input type="text" name="lName" placeholder="Please enter last name">
+
+          <h3>Date Of Birth*</h3>
+          <div class="date">
+            <input type="text" class="dateOfBirth" name="dateOfBirth1" maxlength="2" placeholder="dd">
+            <input type="text" class="dateOfBirth" name="dateOfBirth2" maxlength="2" placeholder="mm">
+            <input type="text" class="dateOfBirth dateYear" name="dateOfBirth3" maxlength="4" placeholder="yyyy">
+          </div>
+
+          <h3>National Insurance Number*</h3>
+          <div class="alignDiv">
+            <input type="text" class="natInsNum" name="natInNum1" maxlength="2">
+            <input type="text" class="natInsNum" name="natInNum2"maxlength="2">
+            <input type="text" class="natInsNum" name="natInNum3"maxlength="2">
+            <input type="text" class="natInsNum" name="natInNum4"maxlength="2">
+            <input type="text" class="natInsNum" name="natInNum5"maxlength="1">
+          </div>
+
+          <h3>Address Line 1*</h3>
+          <input type="text" name="adLine1" placeholder="Please enter address line 1">
+
+          <h3>Address Line 2</h3>
+          <input type="text" name="adLine2" placeholder="Please enter address line 2">
+
+          <h3>Post Code</h3>
+          <div class="alignDiv">
+            <input type="text" class="pCode" name="pCode1" maxlength="4">
+            <input type="text" class="pCode" name="pCode2" maxlength="3">
+          </div>
+
+          <h3>Contact Number</h3>
+          <input type="text" name="contactNumber" placeholder="Please enter phone number">
+
+          <h3>Emergency Contact</h3>
+          <input type="text" name="eContactName" placeholder="Please enter your emergency contacts name">
+
+          <h3>Emergency Contact Number</h3>
+          <input type="text" name="eContactNumber" placeholder="Please enter emergency contact number">
+
+          <h3>Qualifications</h3>
+          <input type="text" name="quals1" placeholder="Please enter a qualification">
+          <input type="text" name="quals2" placeholder="Please enter a qualification">
+          <input type="text" name="quals3" placeholder="Please enter a qualification">
+
+          <h3>I Will Be Working Via:</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="companyType" value="umbrellaCompany" />
+            <label>An Umbrella Company</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="companyType" value="personalServices" />
+            <label>A Personal Services Company</label>
+          </div>
+
+          <h3>Company Name</h3>
+          <input type="text" name="companyName" placeholder="Please enter company name">
+        </section>
+
+        <section>
+          <h3>Are You Eligible To Work In The UK</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="eligibleUK" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="eligibleUK" value="no">
+            <label>No</label>
+          </div>
+
+          <p>
+            <em>*In line with the Home Office guidance on the prevention of illegal
+                working we will need to verify and take a copy of your ID documentation
+                as evidence of your right to work in the UK.
+            </em>
+          </p>
+
+          <h3>Documents To Prove Eligibility Of Working In UK</h3>
+          <input type="text" name="eligibleUKDocs1" placeholder="Please enter document details">
+          <input type="text" name="eligibleUKDocs2" placeholder="Please enter document details">
+          <input type="text" name="eligibleUKDocs3" placeholder="Please enter document details">
+
+          <h3>Do You Have A Current UK Driving License?</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="ukDrive" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="ukDrive" value="no">
+            <label>No</label>
+          </div>
+
+          <h3>Do You Have Any Unspent Criminal Convictions As Per The Rehabilitation Of
+              Offenders Act 1974?
+          </h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="crimCheck" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="crimCheck" value="no">
+            <label>No</label>
+          </div>
+
+          <h3>If Yes - Please Provide Full Details</h3>
+          <input type="text" name="crimInfo" placeholder="Please enter criminal conviction information">
+
+          <h3>Do You Consider That You Have A Disability</h3>
+          <div class="alignDiv">
+            <input type="radio" class="radioInput" name="disCheck" value="yes">
+            <label>Yes</label>
+            <br />
+            <br />
+            <input type="radio" class="radioInput" name="disCheck" value="no">
+            <label>No</label>
+          </div>
+          <p>
+            <em>
+              *This will help us to decide if there is a need for any adjustments
+              to your working arrangements or for your attendance at an interview.<br />
+              The Equality Act 2010 defines a disability as a physical or mental impairment
+              which has a substancial and long-term adverse effect on a person's ability
+              to carry out normal day to day activities.
+            </em>
+          </p>
+
+          <h3>If Yes - Please Provide Full Details</h3>
+          <input type="text" name="disInfo" placeholder="Please enter diability information">
+        </section>
+
+        <section>
+          <h3>Email Address (For Login):</h3>
+          <input type="text" name="uEmail" placeholder="Please enter email address">
+
+          <h3>Password:</h3>
+          <input type="password" name="uPassword" placeholder="Please enter password">
+
+          <!-- <input type="submit" value="Sign Up"> -->
+          <!-- <input class="subBut" type="submit" onclick="validate()" value="Sign Up"> -->
+          <input type="submit" value="Submit" onclick="return validateSignUp()">
+
+          <span id='txt'></span>
+        </form>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footerLeft"><!--Div for left section of footer-->
+        <p>@Copyright2017</p>
+      </div>
+
+      <div class="footerRight"><!--Div for right section of footer-->
+        <p>01633 660 000</p>
+      </div>
+    </footer>
+  </body>
+</html>
